@@ -22,7 +22,7 @@ class Example(QMainWindow):
             qp = QPainter()
             qp.begin(self)
             f_r, s_r = ri(1, 100), ri(1, 100)
-            yellow_color = QColor(255, 255, 0)
+            yellow_color = QColor(ri(0, 255), ri(0, 255), ri(0, 255))
             qp.setBrush(yellow_color)
             qp.drawEllipse(QPointF(150, 150), f_r, s_r)
             qp.drawEllipse(QPointF(150 + f_r * 2, 150), f_r, s_r)
